@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>L'épreuve du 100 mètres </title>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link href="./style.css" rel="stylesheet">
+
+    </head>
+    <body>
+      <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="marge navbar-brand" href="./index.html">Recommencer </a>
+            <a class="marge navbar-brand" href="./highscore.html">Highscore </a>
+        </nav>
+      </header>
+      <div style="padding : 10%">
+        <div class="card" id='carte-regle'>
+            <div class="card-header">
+              Explication des règles 
+            </div>
+            <div class="card-body">
+              <p class="card-text">Bienvenue au 100m dés ! Tu as 7 essaies pour lancer deux jeux de 4 dés. Quand tu le souhaite, tu peux valider tes lancers pour calculer ton score : On fait la somme de tous tes dés mais attention, les 6 ne comptent pas! Essaie d'atteindre le score maximum ! </p>
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" id='pseudo' style="padding: 10px">
+              <a href="#" class="btn btn-primary" id='bouton-regle' style="margin-top: 10px; background-color: rgb(195, 0, 255)"> Jouer </a>
+            </div>
+        </div>
+
+        <div id='jeu' style="display:none">
+            <div>
+                <div class="card text-center">
+                    <div class="card-header" id='compteur'>
+                      Nombre de lancer(s) restan(s) : 7
+                    </div>
+                  </div>
+            </div>
+
+
+
+            <div class="card text-center" id='carte-set1'>
+                <div class="card-header">
+                    Premier set 
+                </div>
+                <div class="card-body">
+                <h5 class="card-title" id="score-set1"> Score : <div id='compteur-value'> 0 </div>  </h5>
+                <p class="card-text" id='set-display1'> </p>
+                <a href="#" id='lancer1' class="btn btn-primary"  style=" background-color: rgb(195, 0, 255)">Lancer</a>
+                <a href="#" id='corleone1' class="btn btn-primary" style=" background-color: rgb(195, 0, 255)">Freeze</a>
+                </div>
+            </div>
+
+            <div class="card text-center" id='carte-set2'>
+                <div class="card-header">
+                    Second set 
+                </div>
+                <div class="card-body">
+                <h5 class="card-title" id="score-set2">Score : 0 </h5>
+                <p class="card-text" id='set-display2'></p>
+                <a href="#" id='lancer2' class="btn btn-primary" style="display:none ; background-color: rgb(195, 0, 255)">Lancer</a>
+                <a href="#" id='corleone2'class="btn btn-primary" style="display:none ; background-color: rgb(195, 0, 255)" >Freeze</a>
+                </div>
+            </div>
+            <div class="card text-center">
+
+              <div class="card-body">
+                <h5 class="card-title">Total :</h5>
+                <p class="card-text" id='score-total'> 0 </p>
+              </div>
+  
+            </div>
+        </div>
+      </div>
+        
+        <script src="./sport.js"></script>
+        <footer class="footer fixed-bottom text-center bg-dark">
+          <p class="text-white">Le site qui permet de valider.</p>
+      </footer>
+
+    </body>
+</html>

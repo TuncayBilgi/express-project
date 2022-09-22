@@ -1,0 +1,66 @@
+<!doctype html>
+    <html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Score</title>
+
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./node_modules/bootstrap//dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .main {
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+        nav .marge {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        .choix {
+            padding: 50px;
+        }
+
+        .bas {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="marge navbar-brand" href="./index.html">Recommencer </a>
+            <a class="marge navbar-brand" href="./highscore.html">Highscore </a>
+        </nav>
+      </header>
+
+    <div class="main container-fluid text-center ">
+        <div class="row">
+            <h1 class="display-1">Votre score [n|v]ous intéresse</h1>
+            <h3> Score : <div id = "scorefjoefef"> </div></h3>
+        </div>
+        <div class="bas row align-items-center gx-6">
+            <div class="col">
+                <div class="choix border bg-light">
+                    <p><a class="btn btn-primary" href="./index.html" role="button">Recommencer </a></p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="choix border bg-light">
+                    <p><a class="btn btn-danger" href="./highscore.html" role="button"> Highscore</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./score.js"></script>
+
+    <footer class="footer fixed-bottom text-center bg-dark">
+        <p class="text-white">Merci Brucker pour le code.</p>
+    </footer>
+</body>
+
+</html>

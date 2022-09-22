@@ -1,0 +1,10 @@
+.Score {
+    justify-content: center;
+    align-items: center;
+    font-family: "Helvetica Neue";
+    flex-direction: column;
+}
+
+body {
+    background-image: url(./bach2.jpeg)
+}
