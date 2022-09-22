@@ -1,4 +1,4 @@
-# Projet fullstack Node express,Sequelize et Bootstrap.
+# Projet fullstack Node express, Sequelize et Bootstrap.
 
 Codé en pair programming avec un collegue de Centrale Marseille
 
